@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <title>MTIS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MTIS — Mixed Tenure Interminable Saga</title>
+
+  <meta
+    name="description"
+    content="MTIS — Mixed Tenure Interminable Saga. An unofficial tracker of time since 14 July 2023."
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>MTIS</h1>
-  <p>Mixed Tenure Interminable Service</p>
+
+  <div class="page">
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-acronym">MTIS</div>
+
+        <div class="brand-name">
+          MIXED TENURE<br>
+          INTERMINABLE SAGA
+        </div>
+      </div>
+
+      <div class="header-label">
+        TRACKING SERVICE
+      </div>
+    </header>
+
+
+    <!-- Main content -->
+    <main>
+
+      <section class="hero">
+
+        <div class="programme-date">
+          <span class="label">PROGRAMME COMMENCEMENT</span>
+
+          <span
+            class="date"
+            id="startDate"
+          >
+            14 JULY 2023
+          </span>
+        </div>
+
+
+        <div class="clock-section">
+
+          <h1>HOURS SINCE STARTED</h1>
+
+          <div
+            class="clock"
+            id="mainClock"
+            aria-live="polite"
+          >
+            00,000:00:00
+          </div>
+
+          <p class="counting">
+            And counting.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- Status -->
+      <section class="status-box">
+
+        <div class="status-heading">
+          CURRENT STATUS
+        </div>
+
+        <div class="status-text">
+          Time continues to elapse.
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+      <p>
+        MTIS is an unofficial tracking project.
+      </p>
+
+      <p>
+        Not affiliated with the City of Edinburgh Council.
+      </p>
+
+    </footer>
+
+  </div>
+
+
+  <script src="events.js"></script>
+
 </body>
 </html>
