@@ -1,4 +1,3 @@
-```css
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -38,7 +37,6 @@ body {
   justify-content: flex-start;
   gap: 40px;
   padding: 24px 6vw;
-
 }
 
 .brand {
@@ -128,6 +126,7 @@ main {
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
+
 /* --------------------------------------------------
    PROGRAMME DATE
 -------------------------------------------------- */
@@ -147,14 +146,16 @@ main {
   line-height: 1.3;
   color: #5c5860;
 }
+
 .programme-label {
   margin: 0;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 800;
-  letter-spacing: -0.8px;
+  letter-spacing: -1.2px;
   line-height: 1;
   color: #5c5860;
 }
+
 .date {
   margin: 0;
   font-size: clamp(25px, 2.5vw, 34px);
@@ -233,10 +234,10 @@ main {
 
 .record-header .label {
   margin: 0;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 800;
-  letter-spacing: -0.8px;
-  line-height: 1.3;
+  letter-spacing: -1.2px;
+  line-height: 1;
   color: #542b7a;
 }
 
@@ -378,60 +379,60 @@ main {
 
 @media (max-width: 900px) {
 
-.intro-text {
-  font-size: 18px;
-  line-height: 1.5;
-}
+  .intro-text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
+  .counting {
+    font-size: 18px;
+    line-height: 1.4;
+  }
 
-.counting {
-  font-size: 18px;
-  line-height: 1.4;
-}
+  .disclaimer {
+    font-size: 18px;
+    line-height: 1.4;
+  }
 
-.disclaimer {
-  font-size: 18px;
-  line-height: 1.4;
-}
-.site-header {
+  .site-header {
     min-height: auto;
     padding: 22px 5vw;
     align-items: flex-start;
   }
 
-.brand {
+  .brand {
     gap: 16px;
   }
 
-.brand-acronym {
+  .brand-acronym {
     font-size: 38px;
   }
 
-.header-context {
+  .header-context {
     max-width: 320px;
   }
 
-.hero {
+  .hero {
     padding: 76px 5vw 88px;
   }
 
-.intro {
+  .intro {
     margin-bottom: 72px;
   }
 
-.programme-date {
+  .programme-date {
     margin-bottom: 52px;
   }
 
-.clock-section {
+  .clock-section {
     padding-top: 0;
   }
 
-.clock {
+  .clock {
     font-size: clamp(52px, 11vw, 120px);
   }
 
-.programme-record {
+  .programme-record {
     padding: 0 5vw 90px;
   }
 }
@@ -441,10 +442,12 @@ main {
 -------------------------------------------------- */
 
 @media (max-width: 680px) {
-.programme-label {
-  font-size: 20px;
-  letter-spacing: -0.8px;
-}
+
+  .programme-label {
+    font-size: 22px;
+    letter-spacing: -1px;
+  }
+
   .site-header {
     display: block;
     padding: 22px 6vw 24px;
@@ -486,15 +489,19 @@ main {
     line-height: 1.5;
   }
 
- 
   .programme-date {
     gap: 9px;
     margin-bottom: 48px;
   }
 
   .label {
-    font-size: 20px;
-    letter-spacing: -0.8px;
+    font-size: 22px;
+    letter-spacing: -1px;
+  }
+
+  .record-header .label {
+    font-size: 22px;
+    letter-spacing: -1px;
   }
 
   .date {
@@ -598,11 +605,12 @@ main {
 
 @media (max-width: 390px) {
 
-.header-label {
-  font-size: 24px;
-  letter-spacing: -0.2px;
-  line-height: 1.15;
-}
+  .header-label {
+    font-size: 24px;
+    letter-spacing: -0.2px;
+    line-height: 1.15;
+  }
+
   .clock {
     font-size: clamp(43px, 13vw, 58px);
   }
@@ -626,6 +634,4 @@ main {
     scroll-behavior: auto !important;
   }
 }
-```
-
 
