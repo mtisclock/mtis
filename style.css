@@ -153,9 +153,9 @@ main {
 
 .programme-label {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
-  letter-spacing: -1.2px;
+  letter-spacing: -1px;
   line-height: 1;
   color: #5c5860;
 }
@@ -238,9 +238,9 @@ main {
 
 .record-header .label {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 800;
-  letter-spacing: -1.2px;
+  letter-spacing: -1px;
   line-height: 1;
   color: #542b7a;
 }
@@ -448,8 +448,8 @@ main {
 @media (max-width: 680px) {
 
   .programme-label {
-    font-size: 22px;
-    letter-spacing: -1px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
   }
 
   .site-header {
@@ -504,8 +504,8 @@ main {
   }
 
   .record-header .label {
-    font-size: 22px;
-    letter-spacing: -1px;
+    font-size: 20px;
+    letter-spacing: -0.8px;
   }
 
   .date {
