@@ -114,10 +114,11 @@ main {
 }
 
 .intro-note {
-  font-style: normal;
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   font-weight: inherit;
+  font-style: normal !important;
   color: #542b7a;
 }
 
