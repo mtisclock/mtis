@@ -69,11 +69,12 @@ body {
 .header-label {
   margin: 0;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: -0.3px;
   line-height: 1.15;
   text-align: left;
 }
+
 .header-label strong {
   font-weight: 600;
 }
