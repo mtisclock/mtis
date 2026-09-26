@@ -112,7 +112,7 @@ function renderEvents() {
 
   container.innerHTML = "";
 
-  events.forEach((event, index) => {
+  events.forEach((event) => {
     const eventItem = document.createElement("article");
     eventItem.className = "event-item";
 
@@ -123,7 +123,6 @@ function renderEvents() {
 
     button.innerHTML = `
       <span class="event-date">${formatEventDate(event.date)}</span>
-      <span class="event-title">${event.title}</span>
       <span class="event-arrow">+</span>
     `;
 
@@ -131,7 +130,9 @@ function renderEvents() {
     details.className = "event-details";
     details.hidden = true;
 
-    let detailsHTML = "";
+    let detailsHTML = `
+      <div class="event-title">${event.title}</div>
+    `;
 
     if (event.quote) {
       detailsHTML += `
@@ -187,10 +188,7 @@ function renderEvents() {
     container.appendChild(eventItem);
   });
 }
-button.innerHTML = `
-  <span class="event-date">${formatEventDate(event.date)}</span>
-  <span class="event-arrow">+</span>
-`;
+
 
 function updateEventClocks() {
   document.querySelectorAll(".event-clock").forEach((clock) => {
