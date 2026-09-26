@@ -94,7 +94,7 @@ function formatElapsedTime(dateString) {
   const seconds = totalSeconds % 60;
 
   return (
-    hours.toLocaleString("en-GB") +
+   String(hours) +
     ":" +
     String(minutes).padStart(2, "0") +
     ":" +
