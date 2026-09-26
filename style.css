@@ -1,5 +1,5 @@
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -169,9 +169,10 @@ main {
 .clock {
   margin: 0;
   max-width: 100%;
+  font-family: "JetBrains Mono", monospace;
   font-size: clamp(58px, 11.5vw, 210px);
   line-height: 0.92;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: -0.07em;
   color: #211e22;
   font-variant-numeric: tabular-nums lining-nums;
