@@ -227,8 +227,12 @@ main {
 }
 
 .record-header .label {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1.3;
   color: #542b7a;
-  word-spacing: normal
 }
 
 .record-intro {
