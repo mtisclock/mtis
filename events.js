@@ -2,7 +2,7 @@ const events = [
   {
     date: "2023-07-26T00:00:00+01:00",
     title: "Council letter:",
-    quote: "The surveys will be carried out in the coming weeks."
+    quote: "The [building condition] surveys will be carried out in the coming weeks."
   },
   {
     date: "2023-11-01T00:00:00+00:00",
@@ -21,7 +21,7 @@ const events = [
   },
   {
     date: "2024-03-18T00:00:00+00:00",
-    title: "Survey conducted"
+    title: "Survey takes place"
   },
   {
     date: "2024-06-27T00:00:00+01:00",
