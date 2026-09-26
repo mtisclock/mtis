@@ -61,6 +61,7 @@ const events = [
   {
     date: "2026-09-22T00:00:00+01:00",
     title: "Building condition survey and cost estimate 1 received"
+    quote: "My estimated costs are nearly £30k and include a £8.3k management fee to the council."
   },
   {
     date: "2026-09-23T00:00:00+01:00",
