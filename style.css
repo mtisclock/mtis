@@ -122,6 +122,8 @@ main {
   font-weight: 500 !important;
   font-style: normal !important;
   color: #542b7a !important;
+  background: #fff36a;
+  padding: 0 3px;
 }
 /* --------------------------------------------------
    PROGRAMME DATE
