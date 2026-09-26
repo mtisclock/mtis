@@ -114,13 +114,7 @@ main {
 }
 
 .intro-note {
-  margin: 34px 0 0;
-  padding-top: 22px;
-  border-top: 1px solid #d0cdd1;
-  font-size: 14px;
-  line-height: 1.55;
   font-style: italic;
-  color: #777278;
 }
 
 /* --------------------------------------------------
