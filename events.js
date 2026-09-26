@@ -67,3 +67,137 @@ const events = [
     title: "I voted against the works"
   }
 ];
+
+
+function formatEventDate(dateString) {
+  const date = new Date(dateString);
+
+  return date.toLocaleDateString("en-GB", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric"
+  }).toUpperCase();
+}
+
+
+function formatElapsedTime(dateString) {
+  const eventDate = new Date(dateString);
+  const elapsed = Date.now() - eventDate.getTime();
+
+  if (elapsed < 0) {
+    return "00:00:00";
+  }
+
+  const totalSeconds = Math.floor(elapsed / 1000);
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  return (
+    hours.toLocaleString("en-GB") +
+    ":" +
+    String(minutes).padStart(2, "0") +
+    ":" +
+    String(seconds).padStart(2, "0")
+  );
+}
+
+
+function renderEvents() {
+  const container = document.getElementById("eventsContainer");
+
+  if (!container) {
+    return;
+  }
+
+  container.innerHTML = "";
+
+  events.forEach((event, index) => {
+    const eventItem = document.createElement("article");
+    eventItem.className = "event-item";
+
+    const button = document.createElement("button");
+    button.className = "event-button";
+    button.type = "button";
+    button.setAttribute("aria-expanded", "false");
+
+    button.innerHTML = `
+      <span class="event-date">${formatEventDate(event.date)}</span>
+      <span class="event-title">${event.title}</span>
+      <span class="event-arrow">+</span>
+    `;
+
+    const details = document.createElement("div");
+    details.className = "event-details";
+    details.hidden = true;
+
+    let detailsHTML = "";
+
+    if (event.quote) {
+      detailsHTML += `
+        <div class="event-quote">
+          “${event.quote}”
+        </div>
+      `;
+    }
+
+    if (event.note) {
+      detailsHTML += `
+        <div class="event-note">
+          ${event.note}
+        </div>
+      `;
+    }
+
+    detailsHTML += `
+      <div class="event-clock-label">HOURS SINCE EVENT</div>
+      <div class="event-clock" data-event-date="${event.date}">
+        ${formatElapsedTime(event.date)}
+      </div>
+      <div class="event-counting">And counting.</div>
+    `;
+
+    details.innerHTML = detailsHTML;
+
+    button.addEventListener("click", () => {
+      const isOpen = !details.hidden;
+
+      document.querySelectorAll(".event-details").forEach((otherDetails) => {
+        otherDetails.hidden = true;
+      });
+
+      document.querySelectorAll(".event-button").forEach((otherButton) => {
+        otherButton.setAttribute("aria-expanded", "false");
+      });
+
+      document.querySelectorAll(".event-item").forEach((otherItem) => {
+        otherItem.classList.remove("open");
+      });
+
+      if (!isOpen) {
+        details.hidden = false;
+        button.setAttribute("aria-expanded", "true");
+        eventItem.classList.add("open");
+      }
+    });
+
+    eventItem.appendChild(button);
+    eventItem.appendChild(details);
+
+    container.appendChild(eventItem);
+  });
+}
+
+
+function updateEventClocks() {
+  document.querySelectorAll(".event-clock").forEach((clock) => {
+    const eventDate = clock.dataset.eventDate;
+    clock.textContent = formatElapsedTime(eventDate);
+  });
+}
+
+
+renderEvents();
+updateEventClocks();
+
+setInterval(updateEventClocks, 1000);
