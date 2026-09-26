@@ -187,7 +187,10 @@ function renderEvents() {
     container.appendChild(eventItem);
   });
 }
-
+button.innerHTML = `
+  <span class="event-date">${formatEventDate(event.date)}</span>
+  <span class="event-arrow">+</span>
+`;
 
 function updateEventClocks() {
   document.querySelectorAll(".event-clock").forEach((clock) => {
