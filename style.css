@@ -115,10 +115,10 @@ main {
 
 .intro-note {
   font-style: italic;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-  color: inherit;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #302c32;
 }
 
 /* --------------------------------------------------
@@ -196,6 +196,7 @@ main {
   border: 0;
   font-size: 18px;
   line-height: 1.4;
+  font-weight: 400;
   color: #777278;
 }
 
@@ -357,45 +358,67 @@ main {
 
 @media (max-width: 900px) {
 
-  .site-header {
+.intro-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.intro-note {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+  font-style: italic;
+}
+
+.counting {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.disclaimer {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.site-header {
     min-height: auto;
     padding: 22px 5vw;
     align-items: flex-start;
   }
 
-  .brand {
+.brand {
     gap: 16px;
   }
 
-  .brand-acronym {
+.brand-acronym {
     font-size: 38px;
   }
 
-  .header-context {
+.header-context {
     max-width: 320px;
   }
 
-  .hero {
+.hero {
     padding: 76px 5vw 88px;
   }
 
-  .intro {
+.intro {
     margin-bottom: 72px;
   }
 
-  .programme-date {
+.programme-date {
     margin-bottom: 52px;
   }
 
-  .clock-section {
+.clock-section {
     padding-top: 0;
   }
 
-  .clock {
+.clock {
     font-size: clamp(52px, 11vw, 120px);
   }
 
-  .programme-record {
+.programme-record {
     padding: 0 5vw 90px;
   }
 }
@@ -428,9 +451,10 @@ main {
     text-align: left;
   }
 
-  .header-label {
-    font-size: 11px;
-    letter-spacing: 1px;
+    .header-label {
+    font-size: 24px;
+    letter-spacing: -0.2px;
+    line-height: 1.15;
   }
 
   .hero {
@@ -442,16 +466,17 @@ main {
   }
 
   .intro-text {
-    font-size: 17px;
-    line-height: 1.55;
+    font-size: 18px;
+    line-height: 1.5;
   }
-
-  .intro-note {
-    margin-top: 28px;
-    padding-top: 18px;
-    font-size: 13px;
+   .intro-note {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+    font-style: italic;
   }
-
+ 
   .programme-date {
     gap: 9px;
     margin-bottom: 48px;
@@ -486,12 +511,17 @@ main {
 
   .counting {
     margin-top: 24px;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
   }
 
   .disclaimer {
     margin-top: 28px;
     padding-top: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 400;
   }
 
   .programme-record {
