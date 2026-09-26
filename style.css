@@ -169,7 +169,7 @@ main {
 .clock {
   margin: 0;
   max-width: 100%;
-  font-family: "JetBrains Mono", monospace;
+  font-family: "JetBrains Mono", monospace !important;
   font-size: clamp(58px, 11.5vw, 210px);
   line-height: 0.92;
   font-weight: 700;
