@@ -451,8 +451,8 @@ main {
     text-align: left;
   }
 
-    .header-label {
-    font-size: 24px;
+  .header-label {
+    font-size: 26px;
     letter-spacing: -0.2px;
     line-height: 1.15;
   }
@@ -588,6 +588,11 @@ main {
 
 @media (max-width: 390px) {
 
+.header-label {
+  font-size: 24px;
+  letter-spacing: -0.2px;
+  line-height: 1.15;
+}
   .clock {
     font-size: clamp(43px, 13vw, 58px);
   }
