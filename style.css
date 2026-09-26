@@ -69,18 +69,12 @@ body {
 }
 
 .header-label {
-  margin: 0 0 6px;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1.6px;
-  opacity: 0.9;
-}
-
-.header-description {
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
   line-height: 1.45;
-  font-weight: 500;
+  opacity: 0.95;
 }
 
 /* --------------------------------------------------
@@ -99,14 +93,45 @@ main {
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 100px 6vw 110px;
+  padding: 88px 6vw 110px;
 }
+
+/* --------------------------------------------------
+   MTIS INTRODUCTION
+-------------------------------------------------- */
+
+.intro {
+  max-width: 920px;
+  margin: 0 0 86px;
+}
+
+.intro-text {
+  margin: 0 0 22px;
+  font-size: clamp(18px, 2vw, 25px);
+  line-height: 1.5;
+  font-weight: 500;
+  color: #302c32;
+}
+
+.intro-note {
+  margin: 34px 0 0;
+  padding-top: 22px;
+  border-top: 1px solid #d0cdd1;
+  font-size: 14px;
+  line-height: 1.55;
+  font-style: italic;
+  color: #777278;
+}
+
+/* --------------------------------------------------
+   PROGRAMME DATE
+-------------------------------------------------- */
 
 .programme-date {
   display: flex;
   flex-direction: column;
   gap: 11px;
-  margin-bottom: 72px;
+  margin-bottom: 58px;
 }
 
 .label {
@@ -126,9 +151,12 @@ main {
   line-height: 1.1;
 }
 
+/* --------------------------------------------------
+   MAIN CLOCK
+-------------------------------------------------- */
+
 .clock-section {
-  border-top: 1px solid #c8c5c9;
-  padding-top: 42px;
+  padding-top: 0;
 }
 
 .clock-section h1 {
@@ -160,10 +188,14 @@ main {
   color: #5c5860;
 }
 
+/* --------------------------------------------------
+   DISCLAIMER
+-------------------------------------------------- */
+
 .disclaimer {
   margin: 34px 0 0;
-  padding-top: 18px;
-  border-top: 1px solid #d3d0d3;
+  padding-top: 0;
+  border-top: 0;
   font-size: 11px;
   line-height: 1.55;
   color: #777278;
@@ -322,10 +354,11 @@ main {
 }
 
 /* --------------------------------------------------
-   RESPONSIVE
+   RESPONSIVE — TABLET
 -------------------------------------------------- */
 
 @media (max-width: 900px) {
+
   .site-header {
     min-height: auto;
     padding: 22px 5vw;
@@ -348,17 +381,20 @@ main {
     padding: 76px 5vw 88px;
   }
 
+  .intro {
+    margin-bottom: 72px;
+  }
+
   .programme-date {
-    margin-bottom: 58px;
+    margin-bottom: 52px;
   }
 
   .clock-section {
-    padding-top: 34px;
+    padding-top: 0;
   }
 
   .clock {
     font-size: clamp(52px, 11vw, 120px);
-    letter-spacing: -0.065em;
   }
 
   .programme-record {
@@ -366,7 +402,12 @@ main {
   }
 }
 
+/* --------------------------------------------------
+   RESPONSIVE — MOBILE
+-------------------------------------------------- */
+
 @media (max-width: 680px) {
+
   .site-header {
     display: block;
     padding: 22px 6vw 24px;
@@ -390,15 +431,27 @@ main {
   }
 
   .header-label {
-    margin-bottom: 5px;
-  }
-
-  .header-description {
-    font-size: 13px;
+    font-size: 11px;
+    letter-spacing: 1px;
   }
 
   .hero {
     padding: 62px 6vw 76px;
+  }
+
+  .intro {
+    margin-bottom: 62px;
+  }
+
+  .intro-text {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  .intro-note {
+    margin-top: 28px;
+    padding-top: 18px;
+    font-size: 13px;
   }
 
   .programme-date {
@@ -416,7 +469,7 @@ main {
   }
 
   .clock-section {
-    padding-top: 30px;
+    padding-top: 0;
   }
 
   .clock-section h1 {
@@ -426,10 +479,6 @@ main {
   }
 
   .clock {
-    /*
-      Deliberately large, but allowed to wrap rather than overflow
-      on narrow screens.
-    */
     font-size: clamp(48px, 13vw, 92px);
     line-height: 0.95;
     letter-spacing: -0.065em;
@@ -444,6 +493,7 @@ main {
 
   .disclaimer {
     margin-top: 28px;
+    padding-top: 0;
   }
 
   .programme-record {
@@ -504,7 +554,12 @@ main {
   }
 }
 
+/* --------------------------------------------------
+   VERY SMALL PHONES
+-------------------------------------------------- */
+
 @media (max-width: 390px) {
+
   .clock {
     font-size: clamp(43px, 13vw, 58px);
   }
@@ -518,10 +573,16 @@ main {
   }
 }
 
+/* --------------------------------------------------
+   ACCESSIBILITY
+-------------------------------------------------- */
+
 @media (prefers-reduced-motion: reduce) {
+
   * {
     scroll-behavior: auto !important;
   }
 }
 ```
+
 
