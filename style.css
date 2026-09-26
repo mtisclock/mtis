@@ -107,6 +107,7 @@ main {
 
 .intro-text {
   margin: 0 0 22px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
@@ -115,11 +116,13 @@ main {
 }
 
 .intro-note {
-  font: inherit;
+  font-family: "Inter", Arial, Helvetica, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+  font-weight: 500 !important;
   font-style: normal !important;
-  color: #542b7a;
+  color: #542b7a !important;
 }
-
 /* --------------------------------------------------
    PROGRAMME DATE
 -------------------------------------------------- */
@@ -364,11 +367,12 @@ main {
 }
 
 .intro-note {
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-  color: inherit;
-  font-style: italic;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-style: normal;
+  color: #542b7a;
 }
 
 .counting {
@@ -469,13 +473,14 @@ main {
     font-size: 18px;
     line-height: 1.5;
   }
-   .intro-note {
-    font-size: inherit;
-    line-height: inherit;
-    font-weight: inherit;
-    color: inherit;
-    font-style: italic;
-  }
+ .intro-note {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  font-style: normal;
+  color: #542b7a;
+}
  
   .programme-date {
     gap: 9px;
