@@ -436,7 +436,10 @@ main {
 -------------------------------------------------- */
 
 @media (max-width: 680px) {
-
+.programme-label {
+  font-size: 11px;
+  letter-spacing: -0.8px;
+}
   .site-header {
     display: block;
     padding: 22px 6vw 24px;
@@ -486,7 +489,7 @@ main {
 
   .label {
     font-size: 11px;
-    letter-spacing: -1.8px;
+    letter-spacing: -0.8px;
   }
 
   .date {
