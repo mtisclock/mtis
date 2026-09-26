@@ -115,6 +115,10 @@ main {
 
 .intro-note {
   font-style: italic;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
 }
 
 /* --------------------------------------------------
