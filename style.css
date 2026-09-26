@@ -110,14 +110,12 @@ main {
   font-size: 18px;
   line-height: 1.5;
   font-weight: 500;
+  font-style: normal;
   color: #302c32;
 }
 
 .intro-note {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
+  font: inherit;
   font-style: normal !important;
   color: #542b7a;
 }
