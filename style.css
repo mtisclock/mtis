@@ -373,14 +373,6 @@ main {
   line-height: 1.5;
 }
 
-.intro-note {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 500;
-  font-style: normal;
-  color: #542b7a;
-}
 
 .counting {
   font-size: 18px;
@@ -480,14 +472,7 @@ main {
     font-size: 18px;
     line-height: 1.5;
   }
- .intro-note {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 500;
-  font-style: normal;
-  color: #542b7a;
-}
+
  
   .programme-date {
     gap: 9px;
