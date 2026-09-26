@@ -60,8 +60,8 @@ const events = [
   },
   {
     date: "2026-09-22T00:00:00+01:00",
-    title: "Building condition survey and cost estimate 1 received"
-    note: "My estimated costs are nearly £30k and include a £8.3k management fee to the council."
+    title: "Building condition survey and cost estimate 1 received",
+    note: "My estimated costs are nearly £30k and include a £8.3k management fee to the council. This is the first time I see my survey dated 18 March 2024."
   },
   {
     date: "2026-09-23T00:00:00+01:00",
