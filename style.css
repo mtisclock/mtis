@@ -74,6 +74,9 @@ body {
   line-height: 1.15;
   text-align: left;
 }
+.header-label strong {
+  font-weight: 600;
+}
 
 /* --------------------------------------------------
    MAIN
