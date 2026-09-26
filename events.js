@@ -26,12 +26,12 @@ const events = [
   {
     date: "2024-06-27T00:00:00+01:00",
     title: "Council announces new dates for Phase 6:",
-    quote: "It is with great delight that we are able to share the programme for 2024.25 and 2025/26. Your Phase 6 has a March 25 construction start and Dec 25 construction finish."
+    quote: "It is with great delight that we are able to share the programme for 2024/25 and 2025/26. Your Phase 6 has a March 25 construction start and Dec 25 construction finish."
   },
   {
     date: "2024-11-22T00:00:00+00:00",
     title: "Council says there is a further delay:",
-    quote: "We have identified that your home has been built in a different way to most homes in your area. It has become apparent that the potential solution (for your home) would be too expensive and not affordable. We will trial a different approach. We are still working towards fulfilling the 2025/26 projected timescale."
+    quote: "We have identified that your home has been built in a different way to most homes in your area. It has become apparent that the potential solution [for your home] would be too expensive and not affordable. We will trial a different approach. We are still working towards fulfilling the 2025/26 projected timescale."
   },
   {
     date: "2024-12-23T00:00:00+00:00",
