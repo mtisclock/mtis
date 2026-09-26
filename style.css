@@ -121,9 +121,12 @@ main {
   line-height: 1.5 !important;
   font-weight: 500 !important;
   font-style: normal !important;
-  color: #542b7a !important;
-  background: #fff36a;
-  padding: 0 3px;
+  color: #302c32 !important;
+  background-color: #fff36a !important;
+  padding: 2px 4px !important;
+  border-radius: 1px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 /* --------------------------------------------------
    PROGRAMME DATE
