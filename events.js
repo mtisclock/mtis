@@ -143,12 +143,11 @@ function renderEvents() {
     }
 
     detailsHTML += `
-      <div class="event-clock-label">DAYS SINCE</div>
-      <div class="event-clock" data-event-date="${event.date}">
-        ${formatElapsedTime(event.date)}
-      </div>
-    
-    `;
+  <div class="event-clock-label">DAYS SINCE EVENT</div>
+  <div class="event-clock" data-event-date="${event.date}">
+    ${formatElapsedTime(event.date)}
+  </div>
+`;
 
     details.innerHTML = detailsHTML;
 
