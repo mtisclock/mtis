@@ -80,19 +80,19 @@ function formatEventDate(dateString) {
   }).toUpperCase();
 }
 
-
 function formatElapsedTime(dateString) {
   const eventDate = new Date(dateString);
   const elapsed = Date.now() - eventDate.getTime();
 
   if (elapsed < 0) {
-    return "00:00:00";
+    return "0";
   }
 
-const totalSeconds = Math.floor(elapsed / 1000);
-const days = Math.floor(totalSeconds / 86400);
+  const totalSeconds = Math.floor(elapsed / 1000);
+  const days = Math.floor(totalSeconds / 86400);
 
-return String(days);
+  return String(days);
+}
 
 
 function renderEvents() {
