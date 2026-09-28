@@ -21,7 +21,7 @@ const events = [
   },
   {
     date: "2024-03-18T00:00:00+00:00",
-    title: "Survey takes place"
+    title: "Survey takes place",
     note: "UPDATE! Survey issued on day 918."
   },
   {
