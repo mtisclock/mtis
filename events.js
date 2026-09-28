@@ -147,7 +147,7 @@ function renderEvents() {
       <div class="event-clock" data-event-date="${event.date}">
         ${formatElapsedTime(event.date)}
       </div>
-      <div class="event-counting">And counting.</div>
+    
     `;
 
     details.innerHTML = detailsHTML;
