@@ -89,19 +89,10 @@ function formatElapsedTime(dateString) {
     return "00:00:00";
   }
 
-  const totalSeconds = Math.floor(elapsed / 1000);
-  const hours = Math.floor(totalSeconds / 3600);
-  const minutes = Math.floor((totalSeconds % 3600) / 60);
-  const seconds = totalSeconds % 60;
+const totalSeconds = Math.floor(elapsed / 1000);
+const days = Math.floor(totalSeconds / 86400);
 
-  return (
-   String(hours) +
-    ":" +
-    String(minutes).padStart(2, "0") +
-    ":" +
-    String(seconds).padStart(2, "0")
-  );
-}
+return String(days);
 
 
 function renderEvents() {
@@ -152,7 +143,7 @@ function renderEvents() {
     }
 
     detailsHTML += `
-      <div class="event-clock-label">HOURS SINCE EVENT</div>
+      <div class="event-clock-label">DAYS SINCE</div>
       <div class="event-clock" data-event-date="${event.date}">
         ${formatElapsedTime(event.date)}
       </div>
