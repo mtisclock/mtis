@@ -71,16 +71,22 @@
       <span class="clock-label">DAYS</span>
     </div>
 
+<span class="clock-separator">:</span>
+    
     <div class="clock-unit">
       <span class="clock-number" id="hours">00</span>
       <span class="clock-label">HOURS</span>
     </div>
 
+<span class="clock-separator">:</span>
+    
     <div class="clock-unit">
       <span class="clock-number" id="minutes">00</span>
       <span class="clock-label">MINUTES</span>
     </div>
 
+<span class="clock-separator">:</span>
+    
     <div class="clock-unit">
       <span class="clock-number" id="seconds">00</span>
       <span class="clock-label">SECONDS</span>
@@ -161,8 +167,8 @@
     const seconds =
       totalSeconds % 60;
 
-    document.getElementById("days").textContent =
-      days.toLocaleString("en-GB");
+   document.getElementById("days").textContent =
+  String(days);
 
     document.getElementById("hours").textContent =
       String(hours).padStart(2, "0");
