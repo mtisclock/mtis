@@ -184,12 +184,23 @@ main {
   letter-spacing: -1.8px;
   color: #542b7a;
 }
-
 .clock {
   margin: 0;
   max-width: 100%;
-  font-family: "JetBrains Mono", monospace !important;
-  font-size: clamp(58px, 11.5vw, 210px);
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.3fr 1.2fr;
+  gap: 24px;
+  align-items: end;
+}
+
+.clock-unit {
+  min-width: 0;
+}
+
+.clock-number {
+  display: block;
+  font-family: "JetBrains Mono", monospace;
+  font-size: clamp(58px, 9vw, 170px);
   line-height: 0.92;
   font-weight: 700;
   letter-spacing: -0.07em;
@@ -197,16 +208,19 @@ main {
   font-variant-numeric: tabular-nums lining-nums;
   white-space: nowrap;
 }
-.days-since {
-  margin: 22px 0 0;
-  font-family: "JetBrains Mono", monospace;
-  font-size: 80px;
+
+.clock-label {
+  display: block;
+  margin-top: 18px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 18px;
   line-height: 1;
-  font-weight: 500;
-  letter-spacing: -0.06em;
+  font-weight: 700;
+  letter-spacing: -0.3px;
   color: #5c5860;
-  font-variant-numeric: tabular-nums lining-nums;
 }
+
+
 .counting {
   margin: 30px 0 0;
   font-size: 18px;
@@ -441,8 +455,18 @@ main {
     padding-top: 0;
   }
 
-  .clock {
-    font-size: clamp(52px, 11vw, 120px);
+   .clock {
+    grid-template-columns: 1.7fr 1fr 1.2fr 1.1fr;
+    gap: 16px;
+  }
+
+  .clock-number {
+    font-size: clamp(48px, 8vw, 90px);
+  }
+
+  .clock-label {
+    margin-top: 14px;
+    font-size: 15px;
   }
 
   .programme-record {
@@ -532,12 +556,19 @@ main {
   }
 
   .clock {
-    font-size: clamp(48px, 13vw, 92px);
-    line-height: 0.95;
-    letter-spacing: -0.065em;
-    white-space: normal;
-    overflow-wrap: anywhere;
-  }
+  grid-template-columns: 1.7fr 1fr;
+  gap: 34px 18px;
+}
+
+.clock-number {
+  font-size: clamp(52px, 17vw, 92px);
+  line-height: 0.95;
+}
+
+.clock-label {
+  margin-top: 12px;
+  font-size: 14px;
+}
 .days-since {
   margin-top: 16px;
   font-size: 42px;
