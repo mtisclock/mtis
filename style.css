@@ -198,12 +198,12 @@ main {
   white-space: nowrap;
 }
 .days-since {
-  margin: 18px 0 0;
+  margin: 22px 0 0;
   font-family: "JetBrains Mono", monospace;
-  font-size: 22px;
-  line-height: 1.2;
+  font-size: 80px;
+  line-height: 1;
   font-weight: 500;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.06em;
   color: #5c5860;
   font-variant-numeric: tabular-nums lining-nums;
 }
@@ -540,7 +540,7 @@ main {
   }
 .days-since {
   margin-top: 16px;
-  font-size: 18px;
+  font-size: 42px;
 }
   .counting {
     margin-top: 24px;
