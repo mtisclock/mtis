@@ -42,7 +42,7 @@
 <div class="intro">
 <p class="intro-text">
   MTIS is a local authority-led programme of retrofit works to private and council homes in Lochend, Edinburgh.
-  The council determines the programme, timetable, scope of works, procurement, sequencing and cost. My home is in Phase 6. 
+  The council determines the programme timetable, scope of works, procurement, sequencing and cost. My home is in Phase 6. 
   <span class="intro-note">This site records what happens to my home as the saga unfolds.</span>
 </p>
 </div>
@@ -59,31 +59,43 @@
         </div>
 
 
-        <div class="clock-section">
+ <div class="clock-section">
 
-          <h1>
-            HOURS SINCE
-          </h1>
+  <div
+    class="clock"
+    id="mainClock"
+    aria-live="polite"
+  >
+    <div class="clock-unit">
+      <span class="clock-number" id="days">0</span>
+      <span class="clock-label">DAYS</span>
+    </div>
 
-          <div
-            class="clock"
-            id="mainClock"
-            aria-live="polite"
-          >
-            00,000:00:00
-          </div>
+    <div class="clock-unit">
+      <span class="clock-number" id="hours">00</span>
+      <span class="clock-label">HOURS</span>
+    </div>
 
-         <div class="days-since">
-=  <span id="daysSince">0</span> days
+    <div class="clock-unit">
+      <span class="clock-number" id="minutes">00</span>
+      <span class="clock-label">MINUTES</span>
+    </div>
+
+    <div class="clock-unit">
+      <span class="clock-number" id="seconds">00</span>
+      <span class="clock-label">SECONDS</span>
+    </div>
+  </div>
+
+  <p class="counting">
+    And counting.
+  </p>
+
+  <p class="disclaimer">
+    This is an unofficial tracking project. Not affiliated with the City of Edinburgh Council.
+  </p>
+
 </div>
-
-<p class="counting">
-  And counting.
-</p>
-<p class="disclaimer">
-  This is an unofficial tracking project. Not affiliated with the City of Edinburgh Council.
-</p>
-        </div>
 
       </section>
 
